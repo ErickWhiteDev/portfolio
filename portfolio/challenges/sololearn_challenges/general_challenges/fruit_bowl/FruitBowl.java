@@ -6,7 +6,7 @@ b.) It takes three apples to make one apple pie
 Finished 8/18/21 
 */
 
-package sololearn_challenges.general_challenges.fruit_bowl;
+package challenges.sololearn_challenges.general_challenges.fruit_bowl;
 
 import java.util.Scanner;
 

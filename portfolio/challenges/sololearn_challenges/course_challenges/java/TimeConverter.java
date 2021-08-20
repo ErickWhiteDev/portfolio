@@ -4,7 +4,7 @@ The program converts a time in days into seconds
 Finished 8/18/21
 */
 
-package sololearn_challenges.course_challenges.java;
+package challenges.sololearn_challenges.course_challenges.java;
 
 import java.util.Scanner;
 

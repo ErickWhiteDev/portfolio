@@ -4,7 +4,7 @@ The program iterates through a HashMap and returns the player with the highest s
 Finished 8/19/21 
 */
 
-package sololearn_challenges.course_challenges.java;
+package challenges.sololearn_challenges.course_challenges.java;
 
 import java.util.*; 
 

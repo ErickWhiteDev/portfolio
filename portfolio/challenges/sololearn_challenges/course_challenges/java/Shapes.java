@@ -4,7 +4,7 @@ The program calculates the area of a square and a circle using multiple classes 
 Finished 8/18/21
 */
 
-package sololearn_challenges.course_challenges.java;
+package challenges.sololearn_challenges.course_challenges.java;
 
 import java.util.Scanner;
 

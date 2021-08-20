@@ -4,7 +4,7 @@ The program calculates the amount owed on a loan given a fixed pay rate
 Finished 8/18/21 
 */
 
-package sololearn_challenges.course_challenges.java;
+package challenges.sololearn_challenges.course_challenges.java;
 
 import java.util.Scanner;
 

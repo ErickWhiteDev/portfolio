@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ThankYouMessage:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ThankYouMessage_jar</output-path>
+    <root id="archive" name="ThankYouMessage.jar">
+      <element id="module-output" name="ThankYouMessage" />
+    </root>
+  </artifact>
+</component>

@@ -2,7 +2,7 @@
 
 Finished 8/18/21 */
 
-package sololearn_challenges.general_challenges.popsicles;
+package challenges.sololearn_challenges.general_challenges.popsicles;
 
 import java.util.Scanner;
 

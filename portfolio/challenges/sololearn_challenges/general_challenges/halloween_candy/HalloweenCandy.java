@@ -5,7 +5,7 @@ c.) Two houses give out dollar bills
 
 Finished 8/18/21 */
 
-package sololearn_challenges.general_challenges.halloween_candy;
+package challenges.sololearn_challenges.general_challenges.halloween_candy;
 
 import java.util.Scanner;
 

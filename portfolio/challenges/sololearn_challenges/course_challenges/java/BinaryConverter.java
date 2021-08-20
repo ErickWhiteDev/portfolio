@@ -4,7 +4,7 @@ The program converts a base-10 number to binary
 Finished 8/18/21 
 */
 
-package sololearn_challenges.course_challenges.java;
+package challenges.sololearn_challenges.course_challenges.java;
 
 import java.util.Scanner;
 
