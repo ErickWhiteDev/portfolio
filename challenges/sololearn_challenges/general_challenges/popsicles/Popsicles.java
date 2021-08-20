@@ -1,10 +1,8 @@
-/* This program is from the Sololearn app
-
-The program calculates whether the number of popsicles is evenly distributed among the siblings and outputs accordingly
+/* The program calculates whether the number of popsicles is evenly distributed among the siblings and outputs accordingly
 
 Finished 8/18/21 */
 
-package popsicles;
+package sololearn_challenges.general_challenges.popsicles;
 
 import java.util.Scanner;
 

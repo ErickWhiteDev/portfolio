@@ -1,13 +1,11 @@
-/* This program is from the Sololearn app
-
-The program calculates the probability of a house giving away a dollar bill given that
+/* The program calculates the probability of a house giving away a dollar bill given that
 a.) All but three houses give away candy
 b.) One house gives out toothbrushes
 c.) Two houses give out dollar bills
 
 Finished 8/18/21 */
 
-package halloween_candy;
+package sololearn_challenges.general_challenges.halloween_candy;
 
 import java.util.Scanner;
 

@@ -1,12 +1,12 @@
-/* This program is from the Sololearn app
-
+/* 
 The program calculates the number of apple pies that can be made from a bowl of fruit given that
 a.) Half the bowl is apples
 b.) It takes three apples to make one apple pie
 
-Finished 8/18/21 */
+Finished 8/18/21 
+*/
 
-package fruit_bowl;
+package sololearn_challenges.general_challenges.fruit_bowl;
 
 import java.util.Scanner;
 
