@@ -6,4 +6,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
+
+namespace portfolio{
+    class popsicles{
+        static void Main(string[] args){
+            int siblings, popsicles;
+            siblings = Console.ToInt32(Console.ReadLine());
+            popsicles = Console.ToInt32(Console.ReadLine());
+            Console.write(popsicles % siblings == 0 ? "give away" : "eath them yourself");
+        }
+    }
+} 
