@@ -1,0 +1,8 @@
+html {
+    background: linear-gradient(to top, lightskyblue 0%, lightblue 50%) no-repeat;
+    min-height: 100%;
+}
+
+.page-title {
+    color: cornflowerblue;
+}
