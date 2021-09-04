@@ -1,0 +1,14 @@
+Fonts:
+	Heading: Raleway Bold 700
+	Main: Open Sans Regular 400
+	Captions: Ralewway Thin 100
+
+Primary:
+	Background: #ffffff
+	Text: #000000
+
+Accent:
+	Background: #04458f
+	Light: #4c70c0
+	Dark: #001f61
+	Text: #000000

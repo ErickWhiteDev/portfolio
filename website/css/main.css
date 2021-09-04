@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;700&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+
 html {
     background: linear-gradient(to top, lightskyblue 0%, lightblue 50%) no-repeat;
     min-height: 100%;
