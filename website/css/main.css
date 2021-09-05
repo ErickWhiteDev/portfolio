@@ -32,6 +32,8 @@
 
 html {
     background: var(--primary_background);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .page-title {
@@ -40,13 +42,11 @@ html {
     text-align: center;
     font-size: 3em;
     transition: transform .75s, color .75s;
-    overflow-x: hidden;
 }
 
 .page-title:hover {
     color: var(--accent_light);
     transform: scale(1.2);
-    overflow-x: hidden;
 }
 
 .intro {
