@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;700&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+
+html {
+    background: #11161c;
+    min-height: 100%;
+}
+
+.page-title {
+    font-family: 'Raleway', sans-serif;
+    color: #1d7fdb;
+    text-align: center;
+    font-size: 3em;
+    transition: transform .75s, color .75s;
+}
+
+.page-title:hover {
+    transform: scale(1.2);
+    color: #67a3ff;
+}
