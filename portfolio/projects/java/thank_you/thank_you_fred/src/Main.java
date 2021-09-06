@@ -27,7 +27,7 @@ public class Main {
         m.setBackground(Color.WHITE);
         f.add(m);
         f.getContentPane().setBackground(Color.YELLOW);
-        URL url = Main.class.getResource("/gui/LetterLogo.jpg");
+        URL url = Main.class.getResource("/projects/java/thank_you/thank_you_fred/src/gui/LetterLogo.jpg");
         f.setIconImage(Toolkit.getDefaultToolkit().getImage(url));
         f.pack();
         f.setVisible(true);
