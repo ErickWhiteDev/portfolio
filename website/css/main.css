@@ -36,7 +36,7 @@ html {
     overflow-y: hidden;
 }
 
-.page-title {
+.page-title { /* TODO: Make transition on cursor removal */
     font-family: var(--heading_font);
     color: var(--accent_background);
     text-align: center;
@@ -44,9 +44,11 @@ html {
     transition: transform .75s, color .75s;
 }
 
-.page-title:hover {
+.page-title strong:hover {
     color: var(--accent_light);
+    display: inline-block;
     transform: scale(1.2);
+    transition: transform .75s, color .75s;
 }
 
 .intro {
@@ -54,4 +56,19 @@ html {
     color: var(--primary_text);
     text-align: left;
     font-size: medium;
+}
+
+.intro:hover {
+    background-color: var(--primary_light);
+}
+
+.content {
+    font-family: var(--main_font);
+    color: var(--primary_text);
+    text-align: left;
+    font-size: small;
+}
+
+.content:hover {
+    background-color: var(--primary_light);
 }
