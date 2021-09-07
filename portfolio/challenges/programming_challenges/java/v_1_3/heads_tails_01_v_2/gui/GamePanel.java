@@ -16,20 +16,20 @@ public class GamePanel extends JPanel  {
     private BufferedImage image;
     private int frame = 0;
 
-    public GamePanel(int width, int height, String imagePath, int borderTop, int borderLeft, int borderBottom, int borderRight) throws IOException {
-        setBorder(BorderFactory.createLineBorder(new Color(45, 42, 82)));
+    public GamePanel(int width, int height, String imagePath, int borderTop, int borderLeft, int borderBottom, int borderRight, int posX, int posY) throws IOException {
         size = new Dimension(width, height);
         image = ImageIO.read(getClass().getResource(imagePath));
 
         setBorder(BorderFactory.createEmptyBorder(borderTop, borderLeft, borderBottom, borderRight));
+        setBounds(posX, posY, posX + width, posY + height);
     }
 
-    public GamePanel(int width, int height,  int borderTop, int borderLeft, int borderBottom, int borderRight) {
-        setBorder(BorderFactory.createLineBorder(new Color(45, 42, 82)));
+    public GamePanel(int width, int height,  int borderTop, int borderLeft, int borderBottom, int borderRight, int posX, int posY) {
         size = new Dimension(width, height);
 
         setAlignmentX(Component.CENTER_ALIGNMENT);
         setBorder(BorderFactory.createEmptyBorder(borderTop, borderLeft, borderBottom, borderRight));
+        setBounds(posX, posY, posX + width, posY + height);
     }
 
     
