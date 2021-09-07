@@ -4,32 +4,27 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
-import java.awt.Color;
-import java.awt.Component;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
 import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
 
 public class GamePanel extends JPanel  {
     private Dimension size;
     private BufferedImage image;
     private int frame = 0;
 
-    public GamePanel(int width, int height, String imagePath, int borderTop, int borderLeft, int borderBottom, int borderRight, int posX, int posY) throws IOException {
+    public GamePanel(int width, int height, String imagePath) throws IOException {
         size = new Dimension(width, height);
         image = ImageIO.read(getClass().getResource(imagePath));
-
-        setBorder(BorderFactory.createEmptyBorder(borderTop, borderLeft, borderBottom, borderRight));
-        setBounds(posX, posY, posX + width, posY + height);
     }
 
-    public GamePanel(int width, int height,  int borderTop, int borderLeft, int borderBottom, int borderRight, int posX, int posY) {
+    public GamePanel(int width, int height, int borderWidth) {
         size = new Dimension(width, height);
 
-        setAlignmentX(Component.CENTER_ALIGNMENT);
-        setBorder(BorderFactory.createEmptyBorder(borderTop, borderLeft, borderBottom, borderRight));
-        setBounds(posX, posY, posX + width, posY + height);
+        setBorder(new EmptyBorder(borderWidth, borderWidth, borderWidth, borderWidth));
+        setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
     }
 
     

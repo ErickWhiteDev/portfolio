@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;700&display=swap');
 
-[theme="dark"] {
+[data-theme="dark"] { /* https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/ */
     --primary_background: #11161c;
     --primary_light: #373c43;
     --primary_dark: #000;
@@ -15,7 +15,7 @@
     --accent_text: #000;
 }
 
-[theme="light"] {
+[data-theme="light"] {
     --primary_background: #eee;
     --primary_light: #fff;
     --primary_dark: #bcbcbc;
@@ -71,4 +71,13 @@ html {
 
 .content:hover {
     background-color: var(--primary_light);
+}
+
+.theme-switch {
+    background-color: var(--accent_dark);
+    color: var(--accent_text)
+}
+
+.theme-switch:hover {
+    background-color: var(--accent_light);
 }
