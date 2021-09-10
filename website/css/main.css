@@ -1,89 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;700&display=swap');
 
 [data-theme="dark"] { /* https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/ */
-    --primary_background: #11161c;
-    --primary_light: #373c43;
-    --primary_dark: #000;
-    --primary_text: #fff;
+    --primary-background: #11161c;
+    --primary-light: #373c43;
+    --primary-dark: #000;
+    --primary-text: #fff;
 
-    --heading_font: 'Raleway', sans-serif;
-    --main_font: 'Open Sans', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+    --main-font: 'Open Sans', sans-serif;
 
-    --accent_background: #1d7fdb;
-    --accent_light: #67aeff;
-    --accent_dark: #0053a9;
-    --accent_text: #000;
+    --accent-background: #1d7fdb;
+    --accent-light: #67aeff;
+    --accent-dark: #0053a9;
+    --accent-text: #000;
 }
 
 [data-theme="light"] {
-    --primary_background: #eee;
-    --primary_light: #fff;
-    --primary_dark: #bcbcbc;
-    --primary_text: #000;
+    --primary-background: #eee;
+    --primary-light: #fff;
+    --primary-dark: #bcbcbc;
+    --primary-text: #000;
 
-    --heading_font: 'Raleway', sans-serif;
-    --main_font: 'Open Sans', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+    --main-font: 'Open Sans', sans-serif;
 
-    --accent_background: #04458f;
-    --accent_light: #4c70c0;
-    --accent_dark: #001f61;
-    --accent_text: #fff;
+    --accent-background: #04458f;
+    --accent-light: #4c70c0;
+    --accent-dark: #001f61;
+    --accent-text: #fff;
 }
 
 html {
-    background: var(--primary_background);
+    background: var(--primary-background);
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 .site-nav {
-    font-family: var(--main_font);
-    color: var(--primary_text);
+    font-family: var(--main-font);
+    color: var(--primary-text);
     font-size: small;
 }
 
 .page-title { /* TODO: Make transition on cursor removal */
-    font-family: var(--heading_font);
-    color: var(--accent_background);
+    font-family: var(--heading-font);
+    color: var(--accent-background);
     text-align: center;
     font-size: 3em;
     transition: transform .75s, color .75s;
 }
 
 .page-title strong:hover {
-    color: var(--accent_light);
+    color: var(--accent-light);
     display: inline-block;
     transform: scale(1.2);
     transition: transform .75s, color .75s;
 }
 
 .intro {
-    font-family: var(--main_font);
-    color: var(--primary_text);
+    font-family: var(--main-font);
+    color: var(--primary-text);
     text-align: left;
     font-size: medium;
 }
 
 .intro:hover {
-    background-color: var(--primary_light);
+    background-color: var(--primary-light);
 }
 
 .content {
-    font-family: var(--main_font);
-    color: var(--primary_text);
+    font-family: var(--main-font);
+    color: var(--primary-text);
     text-align: left;
     font-size: small;
 }
 
 .content:hover {
-    background-color: var(--primary_light);
+    background-color: var(--primary-light);
 }
 
 .theme-switch {
-    background-color: var(--accent_dark);
-    color: var(--accent_text)
+    background-color: var(--accent-dark);
+    color: var(--accent-text)
 }
 
 .theme-switch:hover {
-    background-color: var(--accent_light);
+    background-color: var(--accent-light);
 }

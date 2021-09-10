@@ -1,0 +1,18 @@
+[data-theme="dark"] { /* https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/ */
+    --language-background: #f7901e;
+    --language-secondary: #007599;
+}
+
+[data-theme="light"] {
+    --language-background: #f7901e;
+    --language-secondary: #007599;
+}
+
+.language-title {
+    color: var(--language-background);
+    transition: transform .75s;
+}
+
+.language-title:hover {
+    color: var(--language-secondary);
+}
