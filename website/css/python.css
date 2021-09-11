@@ -1,0 +1,11 @@
+@import "/website/css/main.css";
+
+.language-title {
+    font-family: var(--heading-font);
+    color: var(--python-primary);
+    font-size: 3em;
+}
+
+.language-title strong:hover {
+    color: var(--python-secondary);
+}

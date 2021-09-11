@@ -16,6 +16,12 @@
 
     --java-primary: #f7901e;
     --java-secondary: #007599;
+
+    --python-primary: #3777ab;
+    --python-secondary: #ffd343;
+
+    --cs-primary: #2c006b;
+    --cs-secondary: #a078db;
 }
 
 [data-theme="light"] {
