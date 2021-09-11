@@ -13,6 +13,9 @@
     --accent-light: #67aeff;
     --accent-dark: #0053a9;
     --accent-text: #000;
+
+    --java-primary: #f7901e;
+    --java-secondary: #007599;
 }
 
 [data-theme="light"] {
@@ -28,6 +31,9 @@
     --accent-light: #4c70c0;
     --accent-dark: #001f61;
     --accent-text: #fff;
+
+    --java-primary: #f7901e;
+    --java-secondary: #007599;
 }
 
 html {

@@ -1,11 +1,13 @@
 @import "/website/css/main.css";
 
 .language-title {
-    color: #f7901e;
+    font-family: var(--primary-text);
+    color: var(--java-primary);
     font-size: 2em;
-    transition: transform .75s;
+    transition: background .5s;
 }
 
 .language-title strong:hover {
-    color: #007599;
+    /* color: var(--java-secondary); */
+    background: linear-gradient(to left, var(--java-primary) 20%, var(--java-secondary) 80%);
 }
