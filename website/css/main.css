@@ -47,7 +47,6 @@ html {
     color: var(--accent-background);
     text-align: center;
     font-size: 3em;
-    transition: transform .75s, color .75s;
 }
 
 .page-title strong:hover {
