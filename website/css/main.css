@@ -20,8 +20,8 @@
     --python-primary: #3777ab;
     --python-secondary: #ffd343;
 
-    --cs-primary: #2c006b;
-    --cs-secondary: #a078db;
+    --cs-primary: #a078db;
+    --cs-secondary: #2c006b;
 }
 
 [data-theme="light"] {
@@ -40,6 +40,12 @@
 
     --java-primary: #f7901e;
     --java-secondary: #007599;
+
+    --python-primary: #3777ab;
+    --python-secondary: #ffd343;
+
+    --cs-primary: #2c006b;
+    --cs-secondary: #a078db;
 }
 
 html {
