@@ -1,13 +1,24 @@
 @import "/website/css/main.css";
 
 .language-title {
-    font-family: var(--primary-text);
+    font-family: var(--heading-font);
     color: var(--java-primary);
     font-size: 2em;
-    transition: background .5s;
+    transition: background .5s ease-in-out, animation .5s ease-in-out;
 }
 
 .language-title strong:hover {
     /* color: var(--java-secondary); */
-    background: linear-gradient(to left, var(--java-primary) 20%, var(--java-secondary) 80%);
+    background: linear-gradient(to left, var(--java-primary) 50%, var(--java-secondary) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2.5s linear infinite;
+    background-size: 200% auto;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
