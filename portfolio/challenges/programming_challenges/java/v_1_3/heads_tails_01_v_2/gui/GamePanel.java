@@ -2,11 +2,11 @@ package challenges.programming_challenges.java.v_1_3.heads_tails_01_v_2.gui;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
@@ -24,7 +24,7 @@ public class GamePanel extends JPanel  {
         size = new Dimension(width, height);
 
         setBorder(new EmptyBorder(borderWidth, borderWidth, borderWidth, borderWidth));
-        setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+        setAlignmentX(Component.CENTER_ALIGNMENT);
     }
 
     
