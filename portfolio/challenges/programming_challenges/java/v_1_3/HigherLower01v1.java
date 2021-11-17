@@ -1,3 +1,7 @@
+/*
+    A simple game that allows a user to guess a number.
+*/
+
 package challenges.programming_challenges.java.v_1_3;
 
 import java.util.Random;

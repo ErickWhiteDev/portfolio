@@ -1,3 +1,7 @@
+/*
+    A small clicker game that allows a user to flip a coin on a GUI.
+*/
+
 package challenges.programming_challenges.java.v_1_3.heads_tails_01_v_2;
 
 import challenges.programming_challenges.java.v_1_3.heads_tails_01_v_2.gui.*;

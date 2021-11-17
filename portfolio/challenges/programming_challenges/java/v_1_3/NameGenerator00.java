@@ -1,3 +1,7 @@
+/*
+    A (WIP) program that generates names semi-consistently with English phonology.
+*/
+
 package challenges.programming_challenges.java.v_1_3;
 
 import java.util.Random;

@@ -10,6 +10,8 @@
             Collude     +0          +20
 */
 
+package projects.java;
+
 import java.util.Random;
 
 public class GameTheory{
