@@ -1,7 +1,7 @@
 /* 
-The program converts a time in days into seconds
+	The program converts a time in days into seconds
 
-Finished 8/18/21
+	Finished 8/18/21
 */
 
 package challenges.sololearn_challenges.course_challenges.java;
@@ -9,6 +9,7 @@ package challenges.sololearn_challenges.course_challenges.java;
 import java.util.Scanner;
 
 public class TimeConverter {
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int days = scanner.nextInt();

@@ -1,5 +1,6 @@
 /*
     A small clicker game that allows a user to flip a coin on a GUI.
+    THIS PROJECT IS CURRENTLY UNFINISHED.
 */
 
 package challenges.programming_challenges.java.v_1_3.heads_tails_01_v_2;

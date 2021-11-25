@@ -1,7 +1,7 @@
 /* 
-The program calculates the area of a square and a circle using multiple classes and inheritance
+    The program calculates the area of a square and a circle using multiple classes and inheritance
 
-Finished 8/18/21
+    Finished 8/18/21
 */
 
 package challenges.sololearn_challenges.course_challenges.java;
@@ -14,9 +14,11 @@ abstract class Shape {
 }
 
 class Circle extends Shape {
+
     public Circle(int radius){
         this.width = radius;
     }
+
     @Override
     public void area(){
         System.out.println(Math.PI * width * width);
@@ -24,9 +26,11 @@ class Circle extends Shape {
 }
 
 class Square extends Shape {
+
     public Square(int width){
         this.width = width;
     }
+
     @Override
     public void area(){
         System.out.println(width * width);
@@ -35,7 +39,9 @@ class Square extends Shape {
 
 
 class Shapes {
-    public static void main(String[ ] args) {
+
+    public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();

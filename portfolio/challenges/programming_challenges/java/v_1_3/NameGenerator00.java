@@ -10,10 +10,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class NameGenerator00 {
+    
     public static void main(String[] args) {
 
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
+
+        // Below are ArrayLists with consonants and vowels arranged according to their phonologial properties
 
         ArrayList<String> nasals = new ArrayList<>(Arrays.asList("m", "n"));
 
@@ -50,21 +53,26 @@ public class NameGenerator00 {
 
         boolean validLength = false;
         int length = 7;
-        while (!validLength){
+
+        while (!validLength){ // Allows the user to select a length for their name
+
             try{
                 System.out.println("Please enter a name length:");
                 length = sc.nextInt();
+
                 if (length > 1){
                     validLength = true;
+
                 } else{
                     System.out.println("Please enter a valid length (greater than 1)!");
                 }
+
             } catch (Exception e){
                 System.out.println("Please enter a valid length (greater than 1)!");
             }
         }
 
-        for (int i = 0; i <= length - 1; i++) {
+        for (int i = 0; i <= length - 1; i++) { // Generates a name one letter at a time
             
             String temp = "";
             boolean validLetter = false;
@@ -74,59 +82,65 @@ public class NameGenerator00 {
             if (articulation.get(articulation.size() - 1).equals("q")) {
                 String[] inclusionList = {"m", "p", "t", "k", "l", "f", "th", "s", "sh", "h", "ch", "w", "y", "a", "ai", "qu"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+
             } else if (articulation.get(articulation.size() - 1).equals("m")) {
                 String[] inclusionList = {"p", "t", "k", "th", "ch", "s", "y", "a", "ai", "qu"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+
             } else if (articulation.get(articulation.size() - 1).equals("p")) {
                 String[] inclusionList = {"l", "s", "h", "y", "a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+
             } else if (articulation.get(articulation.size() - 1).equals("t")) {
                 String[] inclusionList = {"l", "s", "sh", "ch", "y", "a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+            
             } else if (articulation.get(articulation.size() - 1).equals("k")) {
                 String[] inclusionList = {"l", "s", "y", "a", "ai", "qu"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+            
             } else if (articulation.get(articulation.size() - 1).equals("l")) {
                 String[] inclusionList = {"m", "p", "t", "k", "f", "th", "s", "sh", "ch", "y", "a", "ai", "qu"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+            
             } else if (articulation.get(articulation.size() - 1).equals("f")) {
                 String[] inclusionList = {"l", "s", "y", "a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+            
             } else if (articulation.get(articulation.size() - 1).equals("th")) {
                 String[] inclusionList = {"t", "l", "y", "a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+            
             } else if (articulation.get(articulation.size() - 1).equals("s")) {
                 String[] inclusionList = {"p", "t", "k", "y", "a", "ai", "qu"};
                 inclusion.addAll(Arrays.asList(inclusionList));
+            
             } else if (articulation.get(articulation.size() - 1).equals("sh")) {
                 String[] inclusionList = {"p", "t", "k", "y", "a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
-            } else if (articulation.get(articulation.size() - 1).equals("h")) {
+            
+            } else if (articulation.get(articulation.size() - 1).equals("h") || articulation.get(articulation.size() - 1).equals("w")) {
                 String[] inclusionList = {"y", "a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
-            } else if (articulation.get(articulation.size() - 1).equals("ch")) {
+            
+            } else if (articulation.get(articulation.size() - 1).equals("ch") || articulation.get(articulation.size() - 1).equals("qu")) {
                 String[] inclusionList = {"a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
-            } else if (articulation.get(articulation.size() - 1).equals("w")) {
-                String[] inclusionList = {"y", "a", "ai"};
-                inclusion.addAll(Arrays.asList(inclusionList));
+
             } else if (articulation.get(articulation.size() - 1).equals("y")) {
                 String[] inclusionList = {"m", "p", "t", "k", "l", "f", "th", "s", "sh", "ch", "a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
-            } else if (articulation.get(articulation.size() - 1).equals("a")) {
+            } else if (articulation.get(articulation.size() - 1).equals("a") || articulation.get(articulation.size() - 1).equals("ai")) {
                 String[] inclusionList = {"m", "p", "t", "k", "l", "f", "th", "s", "sh", "h", "ch", "w", "y", "qu"};
-                inclusion.addAll(Arrays.asList(inclusionList));
-            } else if (articulation.get(articulation.size() - 1).equals("ai")) {
-                String[] inclusionList = {"m", "p", "t", "k", "l", "f", "th", "s", "sh", "h", "ch", "w", "y", "qu"};
-                inclusion.addAll(Arrays.asList(inclusionList));
-            } else if (articulation.get(articulation.size() - 1).equals("qu")) {
-                String[] inclusionList = {"a", "ai"};
                 inclusion.addAll(Arrays.asList(inclusionList));
             }
             
             while (!validLetter) {
+
                 int randInt = rand.nextInt(letters.size());
+                
                 for (int j = 0; j < letters.get(randInt).size(); j++){
+
                     if (inclusion.contains(letters.get(randInt).get(j))) {
                         validLetter = true;
                         temp = letters.get(randInt).get(rand.nextInt(letters.get(randInt).size()));
@@ -139,19 +153,24 @@ public class NameGenerator00 {
 
         String gender = "";
         int genderSelect = rand.nextInt(1001);
-        if (genderSelect < 499){
+
+        if (genderSelect < 499){ // Selects a gender for the name
             gender = "Boy";
+
         } else if (genderSelect < 998){
             gender = "Girl";
+
         } else{
-            gender = "Apache attack helicopter";
+            gender = "Nonbinary";
         }
 
         name.set(0, name.get(0).substring(0, 1).toUpperCase());
         String finalName = "";
-        for (int i = 0; i < name.size(); i++){
+
+        for (int i = 0; i < name.size(); i++){ // Generates the final name
             finalName = finalName.concat(name.get(i));
         }
+
         System.out.printf("Your baby:%nName: %s%nGender: %s", finalName, gender);
 
         sc.close();
