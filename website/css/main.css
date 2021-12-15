@@ -78,10 +78,21 @@ html {
     font-family: var(--main-font);
     color: var(--primary-text);
     text-align: left;
-    font-size: medium;
+    font-size: xx-large;
 }
 
 .intro:hover {
+    background-color: var(--primary-light);
+}
+
+.content-title {
+    font-family: var(--main-font);
+    color: var(--primary-text);
+    text-align: left;
+    font-size: x-large;
+}
+
+.content-title:hover {
     background-color: var(--primary-light);
 }
 
@@ -89,7 +100,7 @@ html {
     font-family: var(--main-font);
     color: var(--primary-text);
     text-align: left;
-    font-size: small;
+    font-size: medium;
 }
 
 .content:hover {
