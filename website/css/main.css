@@ -67,28 +67,50 @@ html {
 .site-nav ul { /* https://www.w3schools.com/css/css_navbar_horizontal.asp */
     background-color: var(--primary-dark);
     position: fixed;
-    top: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
 .site-nav li {
     display: inline;
-    font-family: var(--main-font);
-    color: var(--primary-text);
-    font-size: small;
 }
 
 .site-nav li:hover {
     background-color: var(--primary-light);
 }
 
+.site-nav a {
+    font-family: var(--main-font);
+    color: var(--primary-text);
+    font-size: small;
+
+    display: block;
+    padding: 8px;
+}
+
 .home {
-    background-color: var(--accent-background);
+    background-color: var(--accent-dark);
+
+    transition-duration: .25s;
+}
+
+.home:hover {
+    background-color: var(--accent-light);
 }
 
 .theme-switch {
+    font-family: var(--main-font);
     background-color: var(--accent-dark);
-    color: var(--accent-text)
+    color: var(--accent-text);
+    font-size: small;
+
+    border: none;
+    padding: 8px 8px;
+    text-align: center;
+    display: inline-block;
+
+    transition-duration: .25s;
 }
 
 .theme-switch:hover {
@@ -102,9 +124,11 @@ html {
     color: var(--accent-background);
     text-align: center;
     font-size: 3em;
+
+    transition-duration: .25s;
 }
 
-.page-title h1:hover {
+.page-title strong:hover {
     color: var(--accent-light);
     display: inline-block;
     transform: scale(1.2);
