@@ -52,12 +52,31 @@
 
 html {
     background: var(--primary-background);
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 body {
     margin: 0;
+    scrollbar-base-color: var(--primary-light);
+    scrollbar-track-color: var(--primary-dark);
+    scrollbar-highlight-color: var(--accent-background);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-background);
 }
 
 /* Site navigation */
