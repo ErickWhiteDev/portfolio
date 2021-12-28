@@ -20,7 +20,7 @@
     <ul>
       <li class="home"><a href="index.html">Home</a></li>
       <li><a href="website/pages/java.html">Java</a></li>
-      <li><a href="website/pages/python.shtml">Python</a></li>
+      <li><a href="website/pages/python.html">Python</a></li>
       <li style="float:right">
         <button class="theme-switch" id="theme-switch">
           <strong>◑</strong>
@@ -67,6 +67,16 @@
     </div>
 
   </article>
+
+  <br>
+
+  <h3 class="counter">
+    Day <span class="day-counter"></span> of waiting for GitHub pages to support SSI!
+  </h3>
+
+  <script>
+    document.querySelector(".day-counter").innerHTML = Math.floor((new Date().getTime() - new Date("12/28/2021").getTime()) / 86400000) + 1; // Function to calculate the number of days between two dates
+  </script>
 
 </body>
 
