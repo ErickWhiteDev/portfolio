@@ -73,7 +73,7 @@ html {
 }
 
 .site-nav li {
-    display: inline;
+    float: left;
 }
 
 .site-nav li:hover {
@@ -87,6 +87,7 @@ html {
 
     display: block;
     padding: 8px;
+    text-decoration: none;
 }
 
 .home {
@@ -162,6 +163,7 @@ html {
     color: var(--primary-text);
     text-align: left;
     font-size: medium;
+    width: 60%;
 }
 
 .content:hover {
