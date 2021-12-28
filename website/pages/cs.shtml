@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" theme="dark">
+<html lang="en">
 
 <head>
 
@@ -10,26 +10,13 @@
   <link href="/portfolio/website/css/main.css" rel="stylesheet" type="text/css">
   <link href="/portfolio/website/css/cs.css" rel="stylesheet" type="text/css">
 
-  <script type="text/javascript" src="/portfolio/website/js/main.js"></script>
+  <script src="/portfolio/website/js/theme-switcher.js"></script>
 
 </head>
 
 <body>
 
-  <nav class="site-nav">
-
-    <ul>
-      <li class="home"><a href="/portfolio/index.html">Home</a></li>
-      <li><a href="java.html">Java</a></li>
-      <li><a href="python.html">Python</a></li>
-      <li style="float:right">
-        <button class="theme-switch" id="theme-switch">
-          Change Theme
-        </button>
-      </li>
-    </ul>
-
-  </nav>
+  <!--#include file="nav.html" -->
 
   <header>
 

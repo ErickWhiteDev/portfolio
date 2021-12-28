@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" theme="dark">
+<html lang="en">
 
 <head>
 
@@ -10,33 +10,21 @@
   <link href="/portfolio/website/css/main.css" rel="stylesheet" type="text/css">
   <link href="/portfolio/website/css/java.css" rel="stylesheet" type="text/css">
 
-  <script type="text/javascript" src="/portfolio/website/js/main.js"></script>
+  <script src="/portfolio/website/js/theme-switcher.js"></script>
 
 </head>
 
 <body>
 
-  <nav class="site-nav">
+  <!--#include file="nav.html" -->
+  <!-- https://stackoverflow.com/a/52024827 -->
 
-    <ul>
-      <li class="home"><a href="/portfolio/index.html">Home</a></li>
-      <li><a href="java.html">Java</a></li>
-      <li><a href="python.html">Python</a></li>
-      <li style="float:right">
-        <button class="theme-switch" id="theme-switch">
-          Change Theme
-        </button>
-      </li>
-    </ul>
-
-  </nav>
-
-  <heading>
+  <header>
 
     <h1 class="page-title"><strong>Erick White does</strong></h1>
     <h1 class="language-title"><strong>Java.</strong></h1>
     
-  </heading>
+  </header>
 
   <article>
 
@@ -49,6 +37,8 @@
       </p>
     </div>
 
+    <br>
+
     <div class="container">
       <h2 class="content-title">Cross Product Calculator</h2>
       <p class="content">
@@ -56,6 +46,8 @@
         <a href="https://github.com/ErickWhiteDev/portfolio/blob/main/portfolio/projects/java/CrossProduct.java" target="_blank">Click here to see it!</a>
       </p>
     </div>
+
+    <br>
 
     <div class="container">
       <h2 class="content-title">Game Theory</h2>
