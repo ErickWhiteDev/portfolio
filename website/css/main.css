@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;700&display=swap');
 
+/* Themes */
+
 [data-theme="dark"] { /* https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/ */
     --primary-background: #11161c;
     --primary-light: #373c43;
@@ -54,20 +56,55 @@ html {
     overflow-y: hidden;
 }
 
+/* Site navigation */
+
 .site-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul { /* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+    background-color: var(--primary-dark);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.site-nav li {
+    display: inline;
     font-family: var(--main-font);
     color: var(--primary-text);
     font-size: small;
 }
 
-.page-title { /* TODO: Make transition on cursor removal */
+.site-nav li:hover {
+    background-color: var(--primary-light);
+}
+
+.home {
+    background-color: var(--accent-background);
+}
+
+.theme-switch {
+    background-color: var(--accent-dark);
+    color: var(--accent-text)
+}
+
+.theme-switch:hover {
+    background-color: var(--accent-light);
+}
+
+/* Text effects */
+
+.page-title {
     font-family: var(--heading-font);
     color: var(--accent-background);
     text-align: center;
     font-size: 3em;
 }
 
-.page-title strong:hover {
+.page-title h1:hover {
     color: var(--accent-light);
     display: inline-block;
     transform: scale(1.2);
@@ -105,13 +142,4 @@ html {
 
 .content:hover {
     background-color: var(--primary-light);
-}
-
-.theme-switch {
-    background-color: var(--accent-dark);
-    color: var(--accent-text)
-}
-
-.theme-switch:hover {
-    background-color: var(--accent-light);
 }
