@@ -56,20 +56,26 @@ html {
     overflow-y: hidden;
 }
 
+body {
+    margin: 0;
+}
+
 /* Site navigation */
 
 .site-nav {
-    list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 15px;
 }
 
 .site-nav ul { /* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+    list-style-type: none;
     background-color: var(--primary-dark);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .site-nav li {
@@ -91,23 +97,19 @@ html {
 }
 
 .home {
-    background-color: var(--accent-dark);
+    background-color: var(--accent-background);
 
     transition-duration: .25s;
 }
 
-.home:hover {
-    background-color: var(--accent-light);
-}
-
 .theme-switch {
     font-family: var(--main-font);
-    background-color: var(--accent-dark);
-    color: var(--accent-text);
+    background-color: var(--accent-background);
+    color: var(--primary-text);
     font-size: small;
 
     border: none;
-    padding: 8px 8px;
+    padding: 8px;
     text-align: center;
     display: inline-block;
 
@@ -121,19 +123,21 @@ html {
 /* Text effects */
 
 .page-title {
-    font-family: var(--heading-font);
-    color: var(--accent-background);
     text-align: center;
     font-size: 3em;
+}
 
-    transition-duration: .25s;
+.page-title strong {
+    display: inline-block;
+    font-family: var(--heading-font);
+    color: var(--accent-background);
+    transition-duration: .75s;
 }
 
 .page-title strong:hover {
     color: var(--accent-light);
-    display: inline-block;
     transform: scale(1.2);
-    transition: transform .75s, color .75s;
+    transition-duration: .75s;
 }
 
 .intro {
@@ -141,10 +145,17 @@ html {
     color: var(--primary-text);
     text-align: left;
     font-size: xx-large;
+    margin-left: 10px;
 }
 
-.intro:hover {
+.container {
+    transition-duration: .25s;
+}
+
+.container:hover{
     background-color: var(--primary-light);
+
+    transition-duration: .25s;
 }
 
 .content-title {
@@ -152,10 +163,7 @@ html {
     color: var(--primary-text);
     text-align: left;
     font-size: x-large;
-}
-
-.content-title:hover {
-    background-color: var(--primary-light);
+    margin-left: 10px;
 }
 
 .content {
@@ -163,9 +171,11 @@ html {
     color: var(--primary-text);
     text-align: left;
     font-size: medium;
-    width: 60%;
+    width: 70%;
+    margin-left: 10px;
+
 }
 
-.content:hover {
-    background-color: var(--primary-light);
+.content a {
+    color: var(--primary-text);
 }

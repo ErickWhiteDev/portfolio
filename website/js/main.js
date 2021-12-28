@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) { // https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/
 
-    // This program enables the imbedded theme switcher in the website
+    // This program enables the embedded theme switcher in the website
     
     let changeTheme = localStorage.getItem("changeTheme");
 

@@ -1,11 +1,17 @@
 @import "/website/css/main.css";
 
 .language-title {
+    font-size: 3em;
+    margin-left: 10px;
+}
+
+.language-title strong {
     font-family: var(--heading-font);
     color: var(--python-primary);
-    font-size: 3em;
+    transition-duration: .5s;
 }
 
 .language-title strong:hover {
     color: var(--python-secondary);
+    transition-duration: .5s;
 }
