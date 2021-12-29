@@ -4,7 +4,7 @@
 
 ### More details on any project are available on request, along with additional projects.
 ### Check out my [website](https://erickwhitedev.github.io/portfolio/) for more information!
-### **NOTE** This site was largely developed and tested using Chrome on Windows 10 machines, and thus may have some issues on other browsers (particularly mobile) - I'll get these fixed as soon as I can!
+### **NOTE:** This site was largely developed and tested using Chrome on Windows 10 machines, and thus may have some issues on other browsers (particularly mobile) - I'll get these fixed as soon as I can!
 
 <br>
 
