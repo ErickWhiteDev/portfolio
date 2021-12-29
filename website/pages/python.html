@@ -17,18 +17,7 @@
 <body>
 
   <nav class="site-nav">
-
-    <ul>
-      <li class="home"><a href="/portfolio/index.html">Home</a></li>
-      <li><a href="java.html">Java</a></li>
-      <li><a href="python.shtml">Python</a></li>
-      <li style="float:right">
-        <button class="theme-switch" id="theme-switch">
-          <strong>◑</strong>
-        </button>
-      </li>
-    </ul>
-
+    {% include nav.html %}
   </nav>
 
   <header>
@@ -61,6 +50,10 @@
     </div>
 
   </article>
+
+  <footer>
+    {% include footer.html %}
+  </footer>
 
 </body>
 

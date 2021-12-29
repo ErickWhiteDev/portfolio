@@ -17,18 +17,7 @@
 <body>
 
   <nav class="site-nav">
-
-    <ul>
-      <li class="home"><a href="/portfolio/index.html">Home</a></li>
-      <li><a href="java.html">Java</a></li>
-      <li><a href="python.shtml">Python</a></li>
-      <li style="float:right">
-        <button class="theme-switch" id="theme-switch">
-          <strong>◑</strong>
-        </button>
-      </li>
-    </ul>
-
+    {% include nav.html %}
   </nav>
 
   <header>
@@ -41,10 +30,15 @@
   <article>
 
     <div class="container">
-      <p class="content-title">Come back soon for more content!</p>
+      <h2 class="content-title">Come back soon for more content!</h2>
+      <p class="content">I've yet to port my C# projects (games made in Unity) to this portfolio - they'll be here soon!</p>
     </div>
 
   </article>
+
+  <footer>
+    {% include footer.html %}
+  </footer>
 
 </body>
 

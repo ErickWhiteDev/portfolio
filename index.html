@@ -15,7 +15,9 @@
 
 <body>
 
-  {% include nav.html %}
+  <nav class="site-nav">
+    {% include nav.html %}
+  </nav>
 
   <header>
 
@@ -64,6 +66,12 @@
   <script>
     document.querySelector(".day-counter").innerHTML = Math.floor((new Date().getTime() - new Date("12/28/2021").getTime()) / 86400000) + 1; // Function to calculate the number of days between two dates
   </script>
+
+  <br>
+
+  <footer>
+    {% include footer.html %}
+  </footer>
 
 </body>
 

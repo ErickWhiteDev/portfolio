@@ -63,6 +63,8 @@ body {
     scrollbar-highlight-color: var(--accent-background);
 }
 
+/* Scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -139,7 +141,7 @@ body {
     background-color: var(--accent-light);
 }
 
-/* Text effects */
+/* Main styling */
 
 .page-title {
     text-align: center;
@@ -201,6 +203,8 @@ body {
     color: var(--primary-text);
 }
 
+/* Counter styling */
+
 .counter {
     font-family: var(--main-font);
     color: var(--primary-text);
@@ -226,4 +230,20 @@ body {
 .day-counter {
     font-size: large;
     color: var(--accent-background);
+}
+
+/* Footer styling */
+
+footer {
+    margin: 0;
+    padding: 15px;
+
+    background-color: var(--primary-dark);
+    text-align: center;
+}
+
+.footer-text {
+    font-family: var(--main-font);
+    color: var(--primary-text);
+    font-size: medium;
 }
