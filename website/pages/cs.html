@@ -17,7 +17,19 @@
 <body>
 
   <nav class="site-nav">
-    {% include nav.html %}
+
+    <ul>
+      <li class="home"><a href="/portfolio/index.html">Home</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="cs.html">C#</a></li>
+      <li style="float:right">
+        <button class="theme-switch" id="theme-switch">
+          <strong>◑</strong>
+        </button>
+      </li>
+    </ul>
+
   </nav>
 
   <header>
@@ -36,8 +48,10 @@
 
   </article>
 
+  <div class="spacer"></div>
+
   <footer>
-    {% include footer.html %}
+    <h3 class="footer-text">Made with ♥ by Erick White ©2021</h3>
   </footer>
 
 </body>

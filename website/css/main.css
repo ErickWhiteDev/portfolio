@@ -58,6 +58,11 @@ html {
 
 body {
     margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     scrollbar-base-color: var(--primary-light);
     scrollbar-track-color: var(--primary-dark);
     scrollbar-highlight-color: var(--accent-background);
@@ -233,6 +238,10 @@ body {
 }
 
 /* Footer styling */
+
+.spacer {
+    flex: 1;
+}
 
 footer {
     margin: 0;
