@@ -12,7 +12,7 @@ public class Message extends JPanel {
     private static final int FRAME_HEIGHT = SIZE.height;
     private static final String MESSAGE = "CSA 2020-2021";
     private static final Font F = new Font("Times New Roman", Font.BOLD,75);
-    private static final URL url = Message.class.getResource("/projects/java/thank_you/thank_you_fred/src//gui/DohertyLogo.jpg");
+    private static final URL url = Message.class.getResource("/projects/java/thank_you/thank_you_fred/src/gui/DohertyLogo.jpg");
     private static final Image i = Toolkit.getDefaultToolkit().getImage(url);
 
     public Message() {
