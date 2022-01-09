@@ -148,6 +148,14 @@ body {
 
 /* Main styling */
 
+.layout-manager {
+    margin: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%;
+}
+
 .page-title {
     text-align: center;
     font-size: 3em;
@@ -174,12 +182,14 @@ body {
 }
 
 .container {
-    transition-duration: .25s;
-    width: 50%;
     padding: 8px;
+    grid-column: 1;
+
     border-style: solid;
     border-width: 2px;
     border-color: #00000000;
+
+    transition-duration: .25s;
 }
 
 .container:hover{
@@ -201,11 +211,33 @@ body {
     color: var(--primary-text);
     text-align: left;
     font-size: medium;
-
 }
 
 .content a {
     color: var(--primary-text);
+}
+
+.profile-picture {
+    max-height: 25%;
+    padding: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00000000;
+
+    grid-column: 2;
+
+    transition-duration: .25s;
+}
+
+.profile-picture:hover {
+    background-color: var(--primary-light);
+    border-color: var(--accent-background);
+
+    transition-duration: .25s;
+}
+
+img {
+    max-height: 100%;
 }
 
 /* Counter styling */
