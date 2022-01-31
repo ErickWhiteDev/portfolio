@@ -26,9 +26,9 @@ public class CrossProduct{
 
     private static double[] crossProduct(double[] vectorA, double[] vectorB){
 
-        double i = (vectorA[1] * vectorB[2]) - (vectorA[2] - vectorB[1]); // Calculates i component of cross product
-        double j = (vectorA[2] * vectorB[0]) - (vectorA[0] - vectorB[2]); // Calculates j component of cross product
-        double k = (vectorA[0] * vectorB[1]) - (vectorA[1] - vectorB[0]); // Calculates k component of cross product
+        double i = (vectorA[1] * vectorB[2]) - (vectorA[2] * vectorB[1]); // Calculates i component of cross product
+        double j = (vectorA[2] * vectorB[0]) - (vectorA[0] * vectorB[2]); // Calculates j component of cross product
+        double k = (vectorA[0] * vectorB[1]) - (vectorA[1] * vectorB[0]); // Calculates k component of cross product
 
         return new double[] {i, j, k};
     }
