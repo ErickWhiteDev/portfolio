@@ -90,7 +90,8 @@ body {
 
 .site-nav {
     margin: 0;
-    padding: 15px;
+
+    z-index: 1;
 }
 
 .site-nav ul { /* https://www.w3schools.com/css/css_navbar_horizontal.asp */
@@ -114,12 +115,12 @@ body {
 
 .site-nav a {
     font-family: var(--main-font);
-    font-size: medium;
+    font-size: x-large;
     text-decoration: none;
     color: var(--primary-text);
 
     display: block;
-    padding: 8px;
+    padding: 10px;
 }
 
 .home {
@@ -130,14 +131,14 @@ body {
 
 .theme-switch {
     font-family: var(--main-font);
-    font-size: medium;
+    font-size: x-large;
     text-align: center;
     color: var(--primary-text);
 
     background-color: var(--accent-background);
 
     border: none;
-    padding: 8px;
+    padding: 10px;
     display: inline-block;
 
     transition-duration: .25s;
@@ -178,8 +179,13 @@ body {
 }
 
 .page-title {
+    background-color: var(--primary-light);
+    padding: 30px;
+
     text-align: center;
-    font-size: 3em;
+    font-size: 5em;
+
+    z-index: 0;
 }
 
 .page-title strong {
@@ -200,7 +206,9 @@ body {
 
 .language-title {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
+
+    z-index: 0;
 }
 
 .intro {
@@ -275,8 +283,15 @@ footer {
     padding: 15px;
 }
 
-.footer-text {
+.footer-text a {
     font-family: var(--main-font);
     font-size: medium;
+    text-decoration: none;
     color: var(--primary-text);
+}
+
+.footer-text:hover a {
+    color: var(--accent-light);
+
+    transition-duration: .25s;
 }
