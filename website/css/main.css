@@ -154,11 +154,11 @@ body {
     margin: 8px;
     display: flex;
     justify-content: space-evenly;
-    gap: 8px;
 }
 
 .column {
     max-width: 50%;
+    padding: 8px;
 }
 
 .container {
@@ -238,6 +238,10 @@ body {
 
 img {
     max-width: 100%;
+}
+
+#first-block {
+    border-right: 5px solid var(--accent-light);
 }
 
 /* Counter styling */
