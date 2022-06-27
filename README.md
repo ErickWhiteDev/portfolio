@@ -17,7 +17,7 @@ in high school); I hope to be able to pursue my interest through a possible mino
 ## This is a portfolio of my various projects, coding challenges, and assignments, across multiple years and programming languages.
 
 ### More details on any project are available on request, along with additional projects.
-### Check out my [website](https://erickwhitedev.github.io/portfolio/) for more information!
+### Check out my [website](https://erickwhitedev.github.io) for more information!
 ### **NOTE:** This site was largely developed and tested using Chrome on Windows 10 machines, and thus may have some issues on other browsers (particularly mobile) - I'll get these fixed as soon as I can!
 
 <br>
@@ -32,7 +32,7 @@ in high school); I hope to be able to pursue my interest through a possible mino
 ## What will you find in this portfolio?
 
 ### This portfolio is a compilation of a variety of different projects and assignments from over the years.
-### It invludes both finished and unfinished projects in many langiages; see my pages for [Java](https://erickwhitedev.github.io/portfolio/website/pages/java.html) and [Python](https://erickwhitedev.github.io/portfolio/website/pages/python.html) for a few examples of this.
+### It includes both finished and unfinished projects in many languages; see my pages for [Java](https://erickwhitedev.github.io/portfolio/website/pages/java.html) and [Python](https://erickwhitedev.github.io/portfolio/website/pages/python.html) for a few examples of this.
 
 <br>
 
